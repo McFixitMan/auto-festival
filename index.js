@@ -92,7 +92,7 @@ const run = async () => {
 
     const browser2 = await puppeteer.launch({
         headless: false,
-        executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
+        executablePath: chromeExecutablePath,
         args: [`--window-size=${windowWidth},${windowHeight}`, `--window-position=${windowWidth},0`],
     });
     logMessage('secondaryPage browser launched', 'ready');
